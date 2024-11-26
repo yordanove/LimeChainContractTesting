@@ -4,7 +4,6 @@ const { ERRORS } = require("../constants/errorMessages");
 const testProducts = require("../fixtures/testProducts.json");
 const StoreFactory = require("../factories/StoreFactory");
 const StorePage = require("../pages/StorePage");
-const { mineBlocks } = require("../helpers/ContractHelper");
 
 describe("Edge Cases", function () {
     let storePage;

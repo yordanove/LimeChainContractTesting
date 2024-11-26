@@ -1,7 +1,6 @@
 const { expect } = require("chai");
 const { QUANTITIES } = require("../constants/productData");
-const { ERRORS } = require("../constants/errorMessages");
-const testProducts = require("../fixtures/testProducts.json");
+const { ERRORS } = require("../constants/errorMessages");   
 const StoreFactory = require("../factories/StoreFactory");
 const StorePage = require("../pages/StorePage");
 

@@ -3,7 +3,15 @@ require("solidity-coverage");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.27",
+  solidity: {
+    version: "0.8.27",
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200
+      }
+    }
+  },
   networks: {
     hardhat: {
       mining: {
@@ -17,5 +25,8 @@ module.exports = {
   },
   coverage: {
     exclude: ["node_modules"]
+  },
+  gasReporter: {
+    enabled: !!process.env.REPORT_GAS
   }
 };

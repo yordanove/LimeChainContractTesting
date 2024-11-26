@@ -92,11 +92,10 @@ describe("Product Purchasing", function () {
     });
 
     it("Should validate quantity modifier in product addition", async function () {
-        // Test zero quantity - hits quantityCheck modifier else path
+        // Test zero quantity
         await expect(ownerPage.addProduct("ValidName", 0))
             .to.be.revertedWith(ERRORS.ZERO_QUANTITY);
 
-        // Verify successful case still works
         await ownerPage.addProduct("ValidName", QUANTITIES.DEFAULT);
         const product = await storePage.getProductByName("ValidName");
         expect(Number(product.quantity)).to.equal(QUANTITIES.DEFAULT);

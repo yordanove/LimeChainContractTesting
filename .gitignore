@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+
+# IDE files
+.idea/
+.vscode/
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# Coverage files
+/coverage
+/coverage.json
+
+# Hardhat Ignition files
+/ignition/deployments/chain-31337
+
+# Package manager files
+package-lock.json
+
+# Debug logs
+*.log
