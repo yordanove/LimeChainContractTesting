@@ -1,0 +1,35 @@
+{
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-ignition": "^0.15.7",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.7",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.12",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.12",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "chai": "^4.5.0",
+    "ethers": "^6.13.4",
+    "hardhat": "^2.22.16",
+    "hardhat-gas-reporter": "^1.0.10",
+    "solidity-coverage": "^0.8.13",
+    "typechain": "^8.3.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "eslint": "^8.57.1",
+    "prettier": "^3.3.3",
+    "prettier-eslint": "^16.3.0"
+  },
+  "scripts": {
+    "test": "hardhat test",
+    "test:management": "hardhat test test/tests/productManagement.test.js",
+    "test:purchasing": "hardhat test test/tests/productPurchasing.test.js",
+    "test:refund": "hardhat test test/tests/refundPolicy.test.js",
+    "test:edge": "hardhat test test/tests/edgeCases.test.js",
+    "test:all": "hardhat test test/tests/*.test.js",
+    "test:coverage": "hardhat coverage",
+    "test:parallel": "hardhat test test/tests/*.test.js --parallel"
+  }
+}

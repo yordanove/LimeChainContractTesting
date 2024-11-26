@@ -1,0 +1,18 @@
+{
+  "standard": {
+    "name": "TestProduct",
+    "quantity": 5
+  },
+  "bulk": {
+    "name": "BulkProduct",
+    "quantity": 10
+  },
+  "special": {
+    "names": ["Product#1", "Product@2", "Product$3"],
+    "quantity": 5
+  },
+  "cases": {
+    "names": ["Product", "PRODUCT", "product"],
+    "quantities": [5, 10, 15]
+  }
+}
