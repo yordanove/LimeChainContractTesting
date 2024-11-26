@@ -23,8 +23,5 @@ node_modules/
 # Hardhat Ignition files
 /ignition/deployments/chain-31337
 
-# Package manager files
-package-lock.json
-
 # Debug logs
 *.log
